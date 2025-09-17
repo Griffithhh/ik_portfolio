@@ -1,0 +1,60 @@
+.cLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // на весь экран
+  background: #111;
+
+  &__content {
+    position: relative;
+    width: 7vw;  // общий размер квадрата
+    height: 7vw;
+  }
+
+  &__item {
+    position: absolute;
+    width: 50.09%;   // чуть больше половины
+    height: 50.09%;
+    background: #4cafef;
+    animation: split 1.5s infinite ease-in-out;
+    transform-origin: center;
+
+    &.topLeft {
+      top: 0;
+      left: 0;
+      --x: -30px;
+      --y: -30px;
+    }
+    &.topRight {
+      top: 0;
+      right: 0;
+      --x: 30px;
+      --y: -30px;
+    }
+    &.bottomLeft {
+      bottom: 0;
+      left: 0;
+      --x: -30px;
+      --y: 30px;
+    }
+    &.bottomRight {
+      bottom: 0;
+      right: 0;
+      --x: 30px;
+      --y: 30px;
+    }
+  }
+}
+
+@keyframes split {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  55% {
+    transform: translate(var(--x), var(--y)) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg); // вернулись без обратного кручения
+  }
+}
+

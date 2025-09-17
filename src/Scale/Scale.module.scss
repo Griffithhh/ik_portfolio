@@ -1,0 +1,130 @@
+.scale {
+    justify-content: space-between;
+    width: 100%;
+    padding: 16vw 5vw 17vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+ @media (min-width: 1000px) {
+   flex-direction: row;
+   padding-top: 10vw;
+   padding-bottom: 8vw;
+   padding-right: 5vw;
+   padding-left: 35vw;
+ }
+  &__technoboard{
+  position: relative;
+        padding-top: 17vw;
+             font-family: var(--font-inter);
+
+    font-weight: 800;
+      text-transform: uppercase;
+  overflow: hidden;
+     @media (min-width: 1000px) {
+               padding-top: 0vw;
+     }
+    &--title{
+      padding-bottom: 6vw;
+           @media (min-width: 1000px) {
+              padding-bottom: 3vw;
+           }
+          & > h1{
+
+    font-size: 9vw;
+ @media (min-width: 1000px) {
+
+       font-size: 3vw;
+ }
+
+
+    }
+    & > span{
+         font-size: 4vw;
+   padding-bottom: 2vw;
+ @media (min-width: 1000px) {
+   font-size: 1vw;
+ }
+    }
+    }
+
+  }
+  &::before {
+
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    transform: translate(-50%, -50%);
+            width: 90vw;
+    height: 120vw;
+
+    background: radial-gradient(circle, #a2fcfc 0%, transparent 70%);
+    filter: blur(3vw);
+    pointer-events: none;
+    border-radius: 50%;
+         @media (min-width: 1000px) {
+    width: 80vw;
+    height: 40vw;
+     }
+  }
+
+
+
+
+
+}
+
+.deck {
+  position: relative;
+  width: 45vw;
+  height: 60vw;
+      left: 18%;
+     @media (min-width: 1000px) {
+       left: unset;
+         width: 18vw;
+  height: 25vw;
+     }
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  user-select: none;
+
+background:
+    radial-gradient(circle at 25% 25%, rgba(162, 252, 252, 0.35) 0%, transparent 85%), /* яркая вспышка 1 */
+    radial-gradient(circle at 75% 75%, rgba(162, 252, 252, 0.35) 0%, transparent 85%), /* яркая вспышка 2 */
+    radial-gradient(circle at 50% 10%, rgba(162, 252, 252, 0.2) 0%, transparent 90%), /* дополнительная мелкая вспышка */
+    linear-gradient(135deg, #1a2a34, #0d1114), /* основной матовый фон */
+    radial-gradient(circle, rgba(0,0,0,0.15), transparent 70%);
+
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.3),   /* лёгкая тень */
+    0 8px 16px rgba(0, 0, 0, 0.2),  /* более крупная мягкая тень */
+    0 12px 24px rgba(0, 0, 0, 0.15);
+  /* Объёмная тень для эффекта карточки */
+   @media (min-width: 1000px) {
+       border-radius: 1vw;
+   }
+}
+.image{
+  width: 20vw;
+  height: 20vw;
+      position: relative;
+    z-index: 2;
+   pointer-events: none;
+    object-fit: cover;
+   @media (min-width: 1000px) {
+       width: 8vw;
+  height: 8vw;
+   }
+}
+

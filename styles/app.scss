@@ -1,0 +1,70 @@
+@import "./utils/reset";
+@import "./utils/fonts";
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 300;
+  color: #000000DE;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.invisible {
+  display: none;
+}
+//slider
+/* globals.css */
+.slider {
+  border: none;
+  color: #9C27B0;
+}
+
+
+.slider .MuiSlider-thumb {
+
+
+  background-color: #9C27B0;
+}
+
+.slider .MuiSlider-thumb:hover,
+.slider .MuiSlider-thumb.Mui-focusVisible,
+.slider .MuiSlider-thumb.Mui-active {
+
+  box-shadow: 0 0 0 8px rgba(156, 39, 176, 0.16);
+}
+
+
+.slider .MuiSlider-track {
+  border: none;
+
+  background-color: #9C27B0;
+}
+
+.slider .MuiSlider-rail {
+
+  background-color: #9C27B0;
+}
+
+
+.slider .MuiSlider-markLabel {
+
+  margin-top: 0.5vw;
+  color: #00000099;
+  font-size:0.972vw;
+}
+.slider .MuiSlider-mark {
+  width:0.139vw;
+  height: 0.139vw;
+  background-color: #9C27B0;
+}

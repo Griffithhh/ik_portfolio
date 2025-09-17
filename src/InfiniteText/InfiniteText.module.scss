@@ -1,0 +1,24 @@
+.infinite{
+  width: 100%;
+  overflow: hidden;white-space: nowrap;
+  background-color: black;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+    border-top:0.1vw solid #a2fcfc;
+  border-bottom: 0.1vw solid #a2fcfc;
+  &__animate{
+    display: flex;
+    gap: 2vw;
+        flex-shrink: 0; // важно для бесшовности
+  }
+&__text{
+  font-weight: 700;
+  font-size: 3vw;
+  display: inline-flex;
+
+gap: 5vw;
+  text-transform: uppercase;
+   font-family: var(--font-inter);
+
+}
+}

@@ -1,0 +1,121 @@
+.container {
+         display: flex;
+         justify-content: start;
+         align-items: center;
+         background: #a2fcfc;
+         border-top: #a2fcfc 0.15vw solid;
+         font-family: var(--font-inter);
+ /* глубокий океан */
+
+  &__form {
+         background: #000000;
+         border-top-right-radius: 0vw;
+
+         border-bottom-right-radius: 50vw  ;
+    & > h1{
+         width: 100%;
+         font-size: 5.95vw;
+         text-transform: uppercase;
+         font-weight: 700;
+         letter-spacing: -0.2vw;
+       @media (min-width: 1000px) {
+         font-size: 2.95vw;
+       }
+    }
+
+    width: 100%;
+    padding: 7vw 21vw 18vw 5vw;
+
+    position: relative;
+    overflow: hidden;
+ @media (min-width: 1000px) {
+
+          padding: 3vw 15.6vw 9vw 5vw;
+ }
+      form {
+            gap: 2.4vw;
+        padding-top: 0.5vw;
+               color: #a2fcfc;
+      position: relative;
+      z-index: 1; // чтобы элементы формы были поверх эффекта
+      display: flex;
+      flex-direction: column;
+
+
+    }
+
+    &-group {
+
+  border: 0.1vw solid #a2fcfc;
+ @media (min-width: 1000px) {
+          width: 45.5vw;
+         }
+      display: flex;
+      flex-direction: column;
+
+
+      label {
+        font-weight: 600;
+
+      }
+
+      input,
+
+      textarea {
+           height: 8vw;
+            gap: 5vw;
+  font-size: 3vw;
+      background: transparent;
+    resize: none;
+               color: #a2fcfc;
+;
+         @media (min-width: 1000px) {
+             font-size: 2.2vw;
+                    height: 5vw;
+         }
+        transition: border-color 0.2s ease;
+    &::placeholder {
+             font-family: var(--font-inter);
+      color: #a2fcfc;
+      letter-spacing: 0.2vw;
+      opacity: 1;
+    }
+
+      }
+
+      textarea {
+              background: transparent;
+        resize: none;
+               color: #a2fcfc;
+          height: 19vw;
+      }
+    }
+
+    &-actions {
+      display: flex;
+
+      button {
+        height: 9vw;
+       width: 75.4vw;
+        font-size: 3vw;
+        font-weight: 500;
+        cursor: pointer;
+        letter-spacing: 0.3vw;
+        color: #a2fcfc;
+        border: 0.1vw solid #a2fcfc;
+        background-color: transparent;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+         @media (min-width: 1000px) {
+              width: 45.4vw;
+     height: 6vw;
+         }
+  &:hover {
+   background-color:  #a2fcfc;
+   color: #000000;
+}
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.technoitem {
+ position: relative;
+
+  overflow: hidden;
+font-size: 15vw;
+ height: 0;
+ transform: translateY(10vw) rotate(10deg);
+
+    transition:
+    height 1s ease,
+    transform 1s ease,
+    opacity 1s ease;
+  &--open {
+      opacity: 1;
+ transform: translateY(0) rotate(0);
+  }
+
+  span {
+    width: 100%;
+    border-bottom: #a2fcfc 0.15vw solid;;
+        font-family: var(--font-inter);
+    font-size: 7vw;
+    font-weight: 800;
+    display: block;
+    padding: 4px 8px;
+    text-transform: uppercase;
+   @media (min-width: 1000px) {
+       font-size: 3vw;
+   }
+  }
+}
+

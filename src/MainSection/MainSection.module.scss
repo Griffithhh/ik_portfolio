@@ -1,0 +1,138 @@
+.main {
+    display: flex;
+    color:#a2fcfc;
+    flex-direction: column;
+align-items: flex-start;
+    text-transform: uppercase;
+    padding: 0 4vw 74.067vw 5vw;
+
+
+
+    overflow: hidden;
+  position: absolute;
+  background-image: url("../../public/img/bg-mobile.png");
+  background-size: cover;
+  background-position: center;
+
+     font-family: var(--font-inter);
+    font-weight: 800;
+
+    width: 100%;
+   @media (min-width: 1000px) {
+
+      background-image: url("../../public/img/bg-desktop.webp");
+       height: 44vw;
+      padding: 1.331vw 6vw 19.654vw 5.3vw;
+  }
+  &__line{
+    height: 1px;
+  }
+  &__text{
+
+    &--title{
+        font-size: 12vw;
+        line-height: 90%;
+        letter-spacing: -0.2vw;
+       @media (min-width: 1000px) {
+             font-size: 7vw;
+       }
+  }
+
+  }
+    &__subtext{
+    display: flex;
+&--subtitle{
+
+  display: inline-block;
+  flex-direction: column;
+           &> p{
+      font-size: 3.84vw;
+       margin-left: 0.96vw;
+             @media (min-width: 1000px) {
+                  font-size: 2.84vw;
+       margin-left: 0.96vw;
+             }
+    }
+      & > span{
+        font-size: 3.2vw;
+          margin-left: 0.96vw;
+               @media (min-width: 1000px) {
+                         font-size: 1.2vw;
+          margin-left: 0.96vw;
+               }
+
+  }
+}
+
+    }
+
+
+&__btn{
+  cursor: pointer;
+  font-family: var(--font-inter);
+  margin-left: 0.3vw;
+  margin-top: 0.5vw;
+  width: 25vw;
+  height: 6vw;
+  top: 36%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  font-weight: 500;
+  font-size: 2.3vw;
+  text-transform: uppercase;
+  color: #a2fcfc;
+  border: 0.1vw solid rgba(162, 252, 252, 1);
+  background-color: transparent;
+
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  &:hover {
+   background-color:  #a2fcfc;
+   color: #000000;
+}
+   @media (min-width: 1000px) {
+      font-size: 1.3vw;
+       width: 12vw;
+  height: 4vw;
+       top: 53%;
+   }
+}
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.main__mask {
+      padding-top: 8vw;
+  overflow: hidden;
+  height: 0;
+ transform: translateY(10vw) rotate(10deg); /* старт: ниже и наклон вправо */
+  opacity: 0;
+  transition:
+    height 1s ease,
+    transform 1s ease,
+    opacity 1s ease;
+   @media (min-width: 1000px) {
+           padding-top: 4vw;
+   }
+}
+.main__mask--open {
+  transform: translateY(0) rotate(0); /* поднимается и выравнивается */
+  opacity: 1;
+}
+.main__text {
+  transition: transform 0.2s linear; /* плавность между кадрами */
+}
+
+
+.lineWrapper {
+  &--p{
+
+  }
+
+  display: inline-block; // чтобы не ломался текст
+}
