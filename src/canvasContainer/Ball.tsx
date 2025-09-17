@@ -17,12 +17,15 @@ export const PlasmaBallCanvas: React.FC = () => {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext("2d")!;
 
-
+    // -------------------------------
+    // функция пересчёта размеров
+    // -------------------------------
     const resizeCanvas = () => {
       const vw = window.innerWidth / 100;
       const sizeVW = window.innerWidth < 1000 ? 70 : 30; // до 1000px = 60vw, иначе 30vw
       const sizePx = sizeVW * vw;
 
+      // Масштабируем с учетом DPR
       const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
       canvas.width = sizePx * dpr;
       canvas.height = sizePx * dpr;
@@ -39,11 +42,15 @@ export const PlasmaBallCanvas: React.FC = () => {
       };
     };
 
-
+    // -------------------------------
+    // инициализация
+    // -------------------------------
     let { W, H, center, radius } = resizeCanvas();
     let lineScale = window.innerWidth < 1000 ? 0.5 : 1;
 
-
+    // -------------------------------
+    // Молнии
+    // -------------------------------
     const bolts: Bolt[] = [];
     let lastGroup = 0;
     const groupInterval = 300;
@@ -169,7 +176,9 @@ export const PlasmaBallCanvas: React.FC = () => {
 
     animate();
 
-
+    // -------------------------------
+    // resize listener
+    // -------------------------------
     const handleResize = () => {
       const newValues = resizeCanvas();
       W = newValues.W;

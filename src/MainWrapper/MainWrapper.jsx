@@ -8,7 +8,6 @@ import { About } from "@/About/About";
 import { Loader } from "@/Loader/Loader";
 import InfiniteTextScroll from "@/InfiniteText/ InfiniteText";
 import {Experience} from "@/Expirience/Experience";
-import FormSection from "@/FormSection/FormSection";
 import {Scale} from "@/Scale/Scale";
 
 export default function MainWrapper() {
@@ -38,9 +37,9 @@ export default function MainWrapper() {
       <InfiniteTextScroll />
         <Scale />
       <About />
-        {/*<Experience />*/}
+        <Experience />
 
-        {/*<FormSection />*/}
+
     </div>
   );
 }

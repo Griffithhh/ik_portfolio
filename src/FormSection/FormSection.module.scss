@@ -48,7 +48,7 @@
 
   border: 0.1vw solid #a2fcfc;
  @media (min-width: 1000px) {
-          width: 45.5vw;
+          width: 34.5vw;
          }
       display: flex;
       flex-direction: column;
@@ -70,7 +70,9 @@
                color: #a2fcfc;
 ;
          @media (min-width: 1000px) {
-             font-size: 2.2vw;
+           padding: 1vw;
+
+             font-size: 1.8vw;
                     height: 5vw;
          }
         transition: border-color 0.2s ease;
@@ -88,6 +90,9 @@
         resize: none;
                color: #a2fcfc;
           height: 19vw;
+           @media (min-width: 1000px) {
+                    height: 10vw;
+           }
       }
     }
 
@@ -106,8 +111,9 @@
         background-color: transparent;
         transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
          @media (min-width: 1000px) {
-              width: 45.4vw;
-     height: 6vw;
+                 font-size: 2.3vw;
+              width: 34.5vw;
+     height: 4vw;
          }
   &:hover {
    background-color:  #a2fcfc;

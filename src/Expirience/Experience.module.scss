@@ -16,16 +16,18 @@
   z-index: 6;
 
   @media (min-width: 1000px) {
-      align-items: flex-start;
+      align-items: center;
     padding: 0vw 1.5vw 0vw 1.5vw;
   }
   &__items{
+
     align-items: center;
       display: flex;
       flex-direction: column;
 
        @media (min-width: 1000px) {
            align-items: center;
+            gap: 7vw;
                flex-direction: row;
        }
       &--item {
@@ -35,13 +37,14 @@ width: 100%;
     align-items: center;
 
     flex: 1 1 0;
-  padding-left: 0vw;
+
+                padding-left: 3.2vw;
         padding-right: 0vw;
        @media (min-width: 1000px) {
-           padding-left: 2.2vw;
-        padding-right: 1vw;
+           padding-left: 0vw;
+        padding-right: 0vw;
          border-bottom: unset;
-            border-right: #a2fcfc 0.02vw solid;
+
        }
     & > h1 {
       font-size: 6.3vw;
