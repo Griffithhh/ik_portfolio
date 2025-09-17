@@ -2,12 +2,10 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // статический билд
-  basePath: "/ik_portfolio", // путь для GitHub Pages
-  assetPrefix: "/ik_portfolio/", // ОБЯЗАТЕЛЬНО слэш в конце
-  images: {
-    unoptimized: true,
-  },
+  output: "export",
+  basePath: "/ik_portfolio",
+  assetPrefix: "./", // обязательно ведущий слеш
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

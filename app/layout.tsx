@@ -1,23 +1,8 @@
-"use strict"
+
 import React from "react";
 import type { Metadata } from "next";
 import "../styles/app.scss";
-
-import { League_Spartan } from "next/font/google";
-import { Inter } from "next/font/google";
-
-
-const leagueSpartan = League_Spartan({
-  subsets: ["latin"],
-  weight: ["400", "700", "300"],
-  variable: "--font-league-spartan",
-});
-
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+import Head from "./head"; // импортируем компонент Head с <link> на шрифты
 
 export const metadata: Metadata = {
   title: "IK | Portfolio",
@@ -29,10 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en" className={`${leagueSpartan.variable} ${inter.variable}`}>
+    <html lang="en">
+      <head>
+        <Head />
+      </head>
       <body>
-      {children}
+        {children}
       </body>
-      </html>
+    </html>
   );
 }
