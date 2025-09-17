@@ -1,9 +1,10 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export", // статический билд
-  basePath: "/ik_portfolio", // важная строка
-  assetPrefix: "/ik_portfolio", // чтобы JS и CSS грузились с правильного пути
+  basePath: "/ik_portfolio", // путь для GitHub Pages
+  assetPrefix: "/ik_portfolio/", // ОБЯЗАТЕЛЬНО слэш в конце
   images: {
     unoptimized: true,
   },
