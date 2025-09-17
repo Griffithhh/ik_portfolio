@@ -5,7 +5,7 @@ import "../styles/app.scss";
 
 import { League_Spartan } from "next/font/google";
 import { Inter } from "next/font/google";
-import Header from "@/Header/Header";
+
 
 const leagueSpartan = League_Spartan({
   subsets: ["latin"],

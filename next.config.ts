@@ -1,10 +1,9 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: isProd ? "/ik_portfolio" : "",
+  output: "export", // статический билд
+  basePath: "/ik_portfolio", // важная строка
+  assetPrefix: "/ik_portfolio", // чтобы JS и CSS грузились с правильного пути
   images: {
     unoptimized: true,
   },
