@@ -4,7 +4,7 @@
   align-items: center;
   height: 100vh; // на весь экран
   background: #111;
-
+z-index: 2;
   &__content {
     position: relative;
     width: 7vw;  // общий размер квадрата

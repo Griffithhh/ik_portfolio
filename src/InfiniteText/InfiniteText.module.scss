@@ -5,7 +5,9 @@
   padding-top: 1vw;
   padding-bottom: 1vw;
     border-top:0.1vw solid #a2fcfc;
+  position: relative;
   border-bottom: 0.1vw solid #a2fcfc;
+  z-index: 10;
   &__animate{
     display: flex;
     gap: 2vw;
