@@ -52,7 +52,7 @@ export const Experience = () => {
               <motion.p variants={itemVariants}>Featured Project</motion.p>
               <motion.h1 variants={itemVariants}>X-Dividend Mobile App</motion.h1>
               <motion.div
-                  className={styles["experience__container__project--description"]}
+                  className={styles["experience__container__project__description"]}
                   variants={itemVariants}
               >
                 The app offers comprehensive data on companies, including categories
@@ -60,6 +60,9 @@ export const Experience = () => {
                 information by sector, name, highest or lowest price, dividend date,
                 and ex-dividend date. This data is updated in real-time, ensuring
                 that users always have access to the most current information.
+                <div className={styles["experience__container__project__description--previewmob"]}>
+                  <img src="/img/booking.png" alt=""/>
+                </div>
               </motion.div>
               <motion.div
                   className={styles["experience__container__project--stack"]}
@@ -71,8 +74,8 @@ export const Experience = () => {
             </motion.div>
 
             {/* Картинка (без анимации) */}
-            <div className={styles["experience__container__preview"]}>
-              <img src="/img/doctor.png" alt=""/>
+            <div className={styles["experience__container__previewdesk"]}>
+              <img src="/img/booking.png" alt=""/>
             </div>
           </div>
         </div>
@@ -80,7 +83,7 @@ export const Experience = () => {
 
 
           <div className={styles["experience__container2__info"]}>
-            <div className={styles["experience__container2__preview"]}>
+            <div className={styles["experience__container2__previewdesk"]}>
               <img src="/img/igaming.png" alt=""/>
             </div>
             {/* Блок с проектом (по очереди) */}
@@ -94,7 +97,7 @@ export const Experience = () => {
               <motion.p variants={itemVariants}>Igaming company</motion.p>
               <motion.h1 variants={itemVariants}>Frontend developer at Growe</motion.h1>
               <motion.div
-                  className={styles["experience__container2__project--description"]}
+                  className={styles["experience__container2__project__description"]}
                   variants={itemVariants}
               >
                 The app offers comprehensive data on companies, including categories
@@ -102,6 +105,9 @@ export const Experience = () => {
                 information by sector, name, highest or lowest price, dividend date,
                 and ex-dividend date. This data is updated in real-time, ensuring
                 that users always have access to the most current information.
+                <div className={styles["experience__container2__project__description--previewmob"]}>
+                  <img src="/img/igaming.png" alt=""/>
+                </div>
               </motion.div>
               <motion.div
                   className={styles["experience__container2__project--stack"]}
@@ -114,6 +120,48 @@ export const Experience = () => {
 
             {/* Картинка (без анимации) */}
 
+          </div>
+        </div>
+        <div className={styles["experience__container"]}>
+
+
+          <div className={styles["experience__container__info"]}>
+            {/* Блок с проектом (по очереди) */}
+            <motion.div
+                className={styles["experience__container__project"]}
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{amount: 0.3}}
+            >
+              <motion.p variants={itemVariants}>Featured Project</motion.p>
+              <motion.h1 variants={itemVariants}>X-Dividend Mobile App</motion.h1>
+              <motion.div
+                  className={styles["experience__container__project__description"]}
+                  variants={itemVariants}
+              >
+                The app offers comprehensive data on companies, including categories
+                of Most Actives, Gainers and Losers Stock Market. Users can sort the
+                information by sector, name, highest or lowest price, dividend date,
+                and ex-dividend date. This data is updated in real-time, ensuring
+                that users always have access to the most current information.
+                <div className={styles["experience__container__project__description--previewmob"]}>
+                  <img src="/img/shopper.png" alt=""/>
+                </div>
+              </motion.div>
+              <motion.div
+                  className={styles["experience__container__project--stack"]}
+                  variants={itemVariants}
+              >
+                <span>React | Mongo/Node | State Management | CRM</span>
+                <button>VIEW DETAILS</button>
+              </motion.div>
+            </motion.div>
+
+            {/* Картинка (без анимации) */}
+            <div className={styles["experience__container__previewdesk"]}>
+              <img src="/img/shopper.png" alt=""/>
+            </div>
           </div>
         </div>
       </section>
