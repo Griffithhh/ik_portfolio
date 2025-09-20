@@ -1,0 +1,117 @@
+.button {
+  display: inline-flex; /* inline-flex */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* gap-2 */
+  white-space: nowrap; /* whitespace-nowrap */
+  border-radius: 0.375rem; /* rounded-md */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  transition: background-color 0.2s, color 0.2s; /* transition-colors */
+  outline: none;
+ @media(min-width: 1000px) {
+
+ }
+  &:focus-visible {
+    outline: 2px solid var(--ring); /* focus-visible:ring-2 */
+    outline-offset: 2px; /* focus-visible:ring-offset-2 */
+  }
+
+  &:disabled {
+    pointer-events: none; /* disabled:pointer-events-none */
+    opacity: 0.5; /* disabled:opacity-50 */
+  }
+
+  svg {
+    pointer-events: none; /* [&_svg]:pointer-events-none */
+    flex-shrink: 0; /* [&_svg]:shrink-0 */
+    width: 1rem; /* [&_svg]:size-4 */
+    height: 1rem;
+  }
+
+  /* Variants */
+  &.default {
+
+ background: transparent; border: 0.05vw solid #a2fcfc;
+    color: #3b82f6;
+
+    &:hover {
+        background-color: #4cafef; /* hover:bg-primary/90 */
+    }
+  }
+
+  &.destructive {
+
+ background: transparent; border: 0.05vw solid #a2fcfc;
+    color: #4cafef;
+    &:hover {
+      background-color: rgba(var(--destructive-rgb), 0.9); /* hover:bg-destructive/90 */
+    }
+  }
+
+  &.outline {
+
+ background: transparent; border: 0.05vw solid #a2fcfc;
+    color:#4cafef;
+
+    &:hover {
+    background-color: #4cafef;
+      color: var(--accent-foreground);
+    }
+  }
+
+  &.secondary {
+    background-color: #4cafef;
+    color:#4cafef;
+
+    &:hover {
+     background-color: #4cafef; /* hover:bg-secondary/80 */
+    }
+  }
+
+  &.ghost {
+    background-color: transparent;
+
+    &:hover {
+    background-color: #4cafef;
+      color: #4cafef;
+    }
+  }
+
+  &.link {
+    color: var(--primary);
+    text-decoration: none;
+    text-underline-offset: 4px; /* underline-offset-4 */
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* Sizes */
+  &.default-size {
+    height: 2.5rem; /* h-10 */
+    padding: 0.5rem 1rem; /* py-2 px-4 */
+  }
+
+  &.sm {
+    height: 10.25vw; /* h-9 */
+    border-radius: 0.375rem;
+    padding: 0 0.75rem; /* px-3 */
+     @media(min-width: 1000px) {
+         height: 2.25rem;
+     }
+  }
+
+  &.lg {
+    height: 2.75rem; /* h-11 */
+    border-radius: 0.375rem;
+    padding: 0 2rem; /* px-8 */
+  }
+
+  &.icon {
+    height: 2.5rem; /* h-10 */
+    width: 2.5rem;
+    padding: 0;
+  }
+}

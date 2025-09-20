@@ -1,0 +1,61 @@
+.badge {
+  display: inline-flex; /* inline-flex */
+  align-items: center;
+  border-radius: 9999px; /* rounded-full */
+  border: 0.1vw solid transparent; /* default border-transparent */
+   gap: 2vw;
+font-size: 2vw; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  transition: background-color 0.2s, color 0.2s;
+  outline: none;
+height: 2vw;
+    padding:2vw 2vw;
+  @media (min-width: 1000px) {
+     font-size: 0.75rem;
+  padding: 0.125rem 0.625rem;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--ring); /* focus:ring-2 focus:ring-ring */
+  }
+
+  /* Variants */
+  &.default {
+    font-size: 2vw;
+    border-color: transparent;
+    background-color: hsl(183 100% 45%);
+    color: hsl(0 0% 10%);
+  @media (min-width: 1000px) {
+   font-size: 1vw;
+  }
+    &:hover {
+      background-color: rgba(var(--primary-rgb), 0.8); /* hover:bg-primary/80 */
+    }
+  }
+
+  &.secondary {
+    border-color: transparent;
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+
+    &:hover {
+      background-color: rgba(var(--secondary-rgb), 0.8);
+    }
+  }
+
+  &.destructive {
+    border-color: transparent;
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
+
+    &:hover {
+      background-color: rgba(var(--destructive-rgb), 0.8);
+    }
+  }
+
+  &.outline {
+    border-color: currentColor; /* text-foreground corresponds to border color */
+    background-color: transparent;
+    color: var(--foreground);
+  }
+}

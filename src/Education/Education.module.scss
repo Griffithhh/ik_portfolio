@@ -1,0 +1,303 @@
+.education {
+  max-width: 90vw; // вместо 1200px
+  margin: 0 auto;
+ padding-top: 10vw;
+  &__header {
+    text-align: left;
+;
+    margin-bottom: 3vw;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    font-weight: 700;
+    background: #a2fcfc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  &__subtitle {
+    color: #6b7280;
+    font-size: 1.125vw;
+  }
+
+  &__main-card {
+        background: hsl(0deg 0% 10% / 80%);
+    margin-bottom: 2vw;
+    padding: 3vw;
+
+    border-radius: 1vw;
+
+    backdrop-filter: blur(2vw);
+    border: 0.01vw solid #a2fcfc;
+    transition: all 0.3s ease;
+
+        @media (min-width: 1000px) {
+            border: 0.1vw solid #a2fcfc;
+            padding: 1.5vw;
+        }
+    &:hover {
+      box-shadow: 0 0 2vw #a2fcfc;
+    }
+  }
+
+  &__main-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+    @media (min-width: 1000px) {
+    margin-bottom: 1vw;
+    }
+  }
+
+  &__university-info {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+        @media (min-width: 1000px) {
+              gap: 1vw;
+        }
+  }
+
+  &__icon-wrapper {
+    padding: 1.5vw;
+
+    border-radius: 50%;
+        animation: neonPulse 2s infinite alternate;
+    background-color: rgba(59, 130, 246, 0.2);
+        @media (min-width: 1000px) {
+                padding: 0.8vw;
+        }
+  }
+
+  &__icon {
+    color: hsl(183 100% 45%);
+            width: 8vw;
+    height: 7vw;
+       @media (min-width: 1000px) {
+          width: 2vw;
+    height: 2vw;
+       }
+
+  }
+
+  &__university {
+    font-size: 3.5vw;
+    font-weight: 700;
+         @media (min-width: 1000px) {
+               font-size: 1.5vw;
+         }
+  }
+  &__degree {
+    font-size: 2.125vw; font-weight: 600; color: hsl(183, 100%, 45%);
+  @media (min-width: 1000px) {
+    font-size: 1.125vw;
+  }
+  }
+  &__faculty {
+    font-size: 2vw; color: #6b7280;
+    @media (min-width: 1000px) {
+     font-size: 1vw;
+    }
+
+  }
+  &__status-badge { animation: pulse 2s infinite; }
+
+  &__info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5vw;
+    @media (min-width: 1000px) { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  &__info-item { display: flex; align-items: center; gap: 0.75vw; }
+  &__info-icon {
+    width: 4.25vw; height: 4.25vw; color: #3b82f6;
+   @media (min-width: 1000px) {
+      width: 1.25vw; height: 1.25vw;
+   }
+  }
+  &__info-title {
+    font-weight: 600;
+    font-size: 3vw;
+        @media (min-width: 1000px) {
+               font-size: 1vw;
+        }
+  }
+  &__info-text {
+     font-size: 3vw;
+    color: #6b7280;
+      @media (min-width: 1000px) {
+     font-size: 1vw;
+    }
+  }
+
+  &__progress { margin-top: 1.5vw; }
+  &__progress-header { display: flex; justify-content: space-between; margin-bottom: 0.25vw; }
+  &__progress-bar {
+
+
+    width: 100%; height: 2.75vw; background-color: #e5e7eb; border-radius: 1.375vw;
+      @media (min-width: 1000px) {
+        border-radius: 0.375vw;
+         height: 0.75vw;
+      }
+  }
+  &__progress-bar-fill {
+
+    height: 100%; background: linear-gradient(to right, #4f46e5, #3b82f6); border-radius:  1.375vw; transition: width 1s ease-out;
+          @media (min-width: 1000px) {
+            border-radius: 0.375vw;
+          }
+  }
+  &__progress-text {
+    font-size: 2.75vw; color: #6b7280; margin-top: 0.25vw;
+    @media (min-width: 1000px) {
+       font-size: 0.75vw;
+    }
+
+  }
+
+  &__modules-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5.5vw;
+    @media(min-width: 1000px) {    gap: 1.5vw; grid-template-columns: repeat(2, 1fr); }
+    @media(min-width: 1200px) { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  &__module-card {
+    background: hsl(0deg 0% 10% / 80%); border-radius: 0.5vw;    overflow: hidden;   padding: 3vw;   border: 0.05vw solid #a2fcfc; cursor: pointer; transition: transform 0.3s ease; &:hover { transform: scale(1.05);
+
+
+  }
+  }
+  &__module-card--completed { border-color: #a2fcfc; }
+
+  &__module-header {  display: flex; justify-content: space-between; margin-bottom: 0.5vw; }
+  &__module-info {
+    display: flex; align-items: flex-start; gap: 2.5vw;
+     @media (min-width: 1000px) {
+       gap: 0.5vw;
+     }
+  }
+  &__module-icon-wrapper {
+padding: 1.6vw;
+    border-radius: 50%;
+     background-color: rgba(156, 163, 175, 0.2);
+    @media (min-width: 1000px) {
+      padding: 0.25vw;
+    }
+  }
+  &__module-icon-wrapper--completed { background-color: hsl(183deg 100% 45% / 20%); }
+  &__module-icon {
+       width: 6vw;
+    height: 4vw;
+    color: #6b7280;
+  @media (min-width: 1000px) {
+width: 1.25vw; height: 1.25vw;
+  }
+
+  }
+  &__module-name {
+    color: #FFFFFF; font-weight: 600; font-size: 2.875vw;
+    @media (min-width: 1000px) {
+      font-size: 0.875vw;
+    }
+  }
+  &__module-badge {
+    font-size: 2vw; margin-top: 0.25vw;
+      @media (min-width: 1000px) {
+         font-size: 0.75vw;
+      }
+  }
+  &__module-content {}
+  &__module-description {
+    font-size: 2.2vw; color: #6b7280; margin-top: 2vw; margin-bottom: 2vw;
+  @media (min-width: 1000px) {
+    margin-bottom: 0.5vw;
+     font-size: 0.875vw;
+  }
+  }
+  &__module-technologies {
+    animation:  fadeInUp   1s ease-in-out forwards; display: flex; flex-wrap: wrap;
+    gap: 2.25vw;
+      @media (min-width: 1000px) {
+            gap: 0.25vw;
+      }
+  }
+  &__technology-badge {
+    font-size: 2vw; border-color:#a2fcfc; color: #3b82f6;
+    @media (min-width: 1000px) {
+          font-size: 0.75vw;
+    }
+  }
+  &__module-button { background: transparent; border: 0.05vw solid #a2fcfc;  width: 100%; margin-top: 0.5vw; }
+  &__module-button-icon { width: 1vw; height: 1vw; margin-right: 0.25vw; }
+
+  // Фиксированные размеры для десктопа
+  @media(min-width: 1000px) {
+    &__title { font-size: 40px; }
+    &__subtitle { font-size: 18px; }
+    &__main-card { padding: 24px; border-radius: 16px; }
+    &__icon { width: 32px; height: 32px; }
+    &__university {color: #FFFFFF; font-size: 24px; }
+    &__degree { font-size: 18px; }
+    &__faculty { font-size: 16px; }
+  }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(var(--primary) / 0.5); }
+  to { box-shadow: 0 0 30px hsl(var(--primary) / 0.8); }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes neonPulse {
+    0% {
+        box-shadow: rgba(255, 255, 255, 0.8) 0 0 5px, rgba(0, 218, 230, 0.525) 0 0 10px, rgba(0, 218, 230, 0.525) 0 0 20.86px;
+    }
+    50% {
+        box-shadow: rgba(255, 255, 255, 1) 0 0 10px, rgba(0, 218, 230, 0.525) 0 0 20px, rgba(0, 218, 230, 0.525) 0 0 25px;
+    }
+    100% {
+        box-shadow: rgba(255, 255, 255, 0.8) 0 0 5px, rgba(0, 218, 230, 0.525) 0 0 10px, rgba(0, 218, 230, 0.525) 0 0 20.86px;
+    }
+}

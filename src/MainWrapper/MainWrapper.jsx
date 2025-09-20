@@ -9,6 +9,7 @@ import { Loader } from "@/Loader/Loader";
 import InfiniteTextScroll from "@/InfiniteText/ InfiniteText";
 import {Experience} from "@/Expirience/Experience";
 import {Scale} from "@/Scale/Scale";
+import EducationSection from "@/Education/Education";
 
 export default function MainWrapper() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,16 +31,21 @@ export default function MainWrapper() {
   }, []);
 
   return (
-    <div className={styles.wrapper}>
-      {isLoading && <Loader />} {/* Показываем локальный лоадер пока контент грузится */}
+      <div className={styles.wrapper}>
+          {isLoading && <Loader/>} {/* Показываем локальный лоадер пока контент грузится */}
 
-      <MainSection setLoader={setIsLoading} />
-      <InfiniteTextScroll />
-        <Scale />
-      <About />
-        <Experience />
+          <MainSection setLoader={setIsLoading}/>
+          <InfiniteTextScroll/>
+          <Scale/>
+          <About/>
+          <Experience/>
+          <section id="education" className="py-20 px-6 bg-surface/30">
+              <div className="animate-fade-in-up">
+                  <EducationSection/>
+              </div>
+          </section>
 
 
-    </div>
+      </div>
   );
 }
