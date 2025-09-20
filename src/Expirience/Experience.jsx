@@ -42,7 +42,6 @@ export const Experience = () => {
           </motion.div>
 
 
-
               <div className={styles["experience__container2__info"]}>
                   <div className={styles["experience__container2__previewdesk"]}>
                       <img src="/img/igaming.png" alt=""/>
@@ -76,7 +75,7 @@ export const Experience = () => {
                           variants={itemVariants}
                       >
                           <span> Next.js | JS/TS | Pixi.js/ | Test groups | Rest API</span>
-                          <button>VIEW DETAILS</button>
+                          <a href="https://growe.com/">VIEW DETAILS</a>
                       </motion.div>
                   </motion.div>
 

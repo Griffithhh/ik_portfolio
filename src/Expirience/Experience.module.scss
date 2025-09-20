@@ -221,7 +221,10 @@ padding-left: 6vw;
        }
     }
   flex-direction: column;
-  & > button{
+  & > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 25vw;
     height: 8vw;
     font-size: 2.5vw;

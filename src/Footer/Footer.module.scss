@@ -1,15 +1,22 @@
 .footer {
-  padding: 2vw 8vw; // py-8 px-6
-       border-top:0.1vw solid #a2fcfc;
 
+         padding: 4vw 10vw;
+       border-top:0.1vw solid #a2fcfc;
+       @media (min-width: 1000px) {
+           padding: 2vw 8vw;
+
+       }
   &__container {
     max-width: 64rem; // max-w-4xl
     margin: 0 auto;
     text-align: center;
 
     &--text {
-      color: var(--muted-foreground);
-      font-size: 0.875rem; // примерно text-sm
+      color:  #a2fcfc;
+      font-size: 0.875rem;
+            @media (min-width: 1000px) {
+              font-size: 1vw;
+            }
     }
   }
 }

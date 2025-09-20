@@ -9,8 +9,9 @@
   }
   &--ball{
     position: absolute;
-
-        top: 10.5%;
+z-index: 1;
+    display: flex;
+        top: 12.5%;
     right: 50%;
       @media (min-width: 1000px) {
     top:10%;
