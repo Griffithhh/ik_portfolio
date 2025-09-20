@@ -43,33 +43,9 @@ export const About = () => {
 
   return (
     <section className={styles.about}>
-      {/* Фон-видео */}
 
-
-      {/* Блок со скиллами */}
     <PlasmaBallCanvas />
 
-      {/* Контент */}
-      <div className={styles["about__wrapper"]}>
-        <div
-          ref={setRefs}
-          className={`${styles["about__mask"]} ${open ? styles["about__mask--open"] : ""}`}
-        >
-          <h1 className={styles["about__wrapper--title"]}>HELLO, I'M IVAN</h1>
-
-          <div className={styles["about__wrapper--title"]}>
-            <p>I use my passion and skills</p>
-          </div>
-
-          <div className={styles["about__wrapper--description"]}>
-            to build modern web applications and digital experiences.
-         National and international clients rely on me for development, implementation, and management of their web products.
-       As an independent developer, I collaborate with web agencies, companies, startups, and individuals to create scalable and efficient digital solutions.
-       Advisor and technical partner for several digital and fintech startups.
-         Also, Judge at CSSDA and The Webby.
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

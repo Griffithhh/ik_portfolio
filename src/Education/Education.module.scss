@@ -1,7 +1,10 @@
 .education {
   max-width: 90vw; // вместо 1200px
   margin: 0 auto;
+  z-index: 2;
  padding-top: 10vw;
+  position: relative;
+      padding-bottom: 5vw;
   &__header {
     text-align: left;
 ;
@@ -10,22 +13,28 @@
 
   &__title {
     text-transform: uppercase;
-    font-size: 2.5vw;
+    font-size: 6.5vw;
     font-weight: 700;
     background: #a2fcfc;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+          @media (min-width: 1000px) {
+                font-size: 2.5vw;
+          }
 
   }
 
   &__subtitle {
     color: #6b7280;
-    font-size: 1.125vw;
+    font-size: 2.125vw;
+              @media (min-width: 1000px) {
+                    font-size: 1.125vw;
+              }
   }
 
   &__main-card {
         background: hsl(0deg 0% 10% / 80%);
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
     padding: 3vw;
 
     border-radius: 1vw;
@@ -35,6 +44,7 @@
     transition: all 0.3s ease;
 
         @media (min-width: 1000px) {
+              margin-bottom: 2vw;
             border: 0.1vw solid #a2fcfc;
             padding: 1.5vw;
         }
@@ -169,7 +179,11 @@
   }
 
   &__module-card {
-    background: hsl(0deg 0% 10% / 80%); border-radius: 0.5vw;    overflow: hidden;   padding: 3vw;   border: 0.05vw solid #a2fcfc; cursor: pointer; transition: transform 0.3s ease; &:hover { transform: scale(1.05);
+    background: hsl(0deg 0% 10% / 80%); border-radius: 0.5vw;    overflow: hidden;   padding: 3vw;   border: 0.05vw solid #a2fcfc; cursor: pointer; transition: transform 0.3s ease;
+    @media (min-width: 1000px) {
+  padding: 1.5vw;
+}
+    &:hover { transform: scale(1.05);
 
 
   }
@@ -184,11 +198,18 @@
      }
   }
   &__module-icon-wrapper {
-padding: 1.6vw;
+        align-items: center;
+    display: flex
+;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
     border-radius: 50%;
      background-color: rgba(156, 163, 175, 0.2);
     @media (min-width: 1000px) {
-      padding: 0.25vw;
+
+      padding: 1vw;
     }
   }
   &__module-icon-wrapper--completed { background-color: hsl(183deg 100% 45% / 20%); }
@@ -219,6 +240,7 @@ width: 1.25vw; height: 1.25vw;
   @media (min-width: 1000px) {
     margin-bottom: 0.5vw;
      font-size: 0.875vw;
+    margin-top: 1vw;
   }
   }
   &__module-technologies {

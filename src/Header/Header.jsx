@@ -20,15 +20,18 @@ export default function Header() {
           />
         </h1>
       </div>
-      <ul className={styles["header__navigation"]}>
-        <li>
-          <Link href="#stack">Stack.</Link>
-        </li>
-        <li>
-          <Link href="#experience">Experience.</Link>
-        </li>
+        <ul className={styles["header__navigation"]}>
+            <li>
+                <Link href="#stack">Stack.</Link>
+            </li>
+            <li>
+                <Link href="#experience">Experience.</Link>
+            </li>
+            <li>
+                <Link href="#education">Education.</Link>
+            </li>
 
-      </ul>
+        </ul>
     </header>
   );
 }

@@ -37,9 +37,6 @@ export const MainSection = () => {
 
               <h1 className={styles["main__text--title"]}>Kharchenko</h1>
 
-              <div className="bg-red-500 text-white p-4">
-                  Тест Tailwind
-              </div>
               {/* Ivan + подзаголовок */}
               <div className={styles["main__subtext"]}>
 

@@ -5,6 +5,7 @@ import { Badge } from "./badge";
 import { Button } from "./button";
 import styles from "./Education.module.scss";
 
+
 const educationData = {
   university: "WSB Merito University",
   location: "Warsaw, Poland",
@@ -63,7 +64,8 @@ export default function EducationSection() {
   const progressPercentage = (completedModules / totalModules) * 100;
 
   return (
-    <div className={styles["education"]}>
+    <div id="education" className={styles["education"]}>
+
       <div className={styles["education__header"]}>
         <h2 className={styles["education__title"]}>Education & Learning</h2>
         <p className={styles["education__subtitle"]}>Academic foundation meets practical expertise</p>

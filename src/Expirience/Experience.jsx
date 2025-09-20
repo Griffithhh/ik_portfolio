@@ -7,22 +7,23 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3, // задержка между детьми
+      staggerChildren: 0.1, // задержка между детьми
     },
   },
 };
 
 const itemVariants = {
   hidden: { scale: 0.5, opacity: 0 },
-  visible: { scale: 1, opacity: 1, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.4, ease: "easeOut" } },
 };
 
 export const Experience = () => {
   return (
       <section id="experience" className={styles.experience}>
-        <div className={styles["experience__container"]}>
-          {/* Заголовок + линия */}
-          <motion.div
+
+
+          <div className={styles["experience__container2"]}>
+<motion.div
               className={styles["experience__container--title"]}
               variants={containerVariants}
               initial="hidden"
@@ -40,130 +41,50 @@ export const Experience = () => {
             </motion.div>
           </motion.div>
 
-          <div className={styles["experience__container__info"]}>
-            {/* Блок с проектом (по очереди) */}
-            <motion.div
-                className={styles["experience__container__project"]}
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{amount: 0.3}}
-            >
-              <motion.p variants={itemVariants}>Featured Project</motion.p>
-              <motion.h1 variants={itemVariants}>X-Dividend Mobile App</motion.h1>
-              <motion.div
-                  className={styles["experience__container__project__description"]}
-                  variants={itemVariants}
-              >
-                The app offers comprehensive data on companies, including categories
-                of Most Actives, Gainers and Losers Stock Market. Users can sort the
-                information by sector, name, highest or lowest price, dividend date,
-                and ex-dividend date. This data is updated in real-time, ensuring
-                that users always have access to the most current information.
-                <div className={styles["experience__container__project__description--previewmob"]}>
-                  <img src="/img/booking.png" alt=""/>
-                </div>
-              </motion.div>
-              <motion.div
-                  className={styles["experience__container__project--stack"]}
-                  variants={itemVariants}
-              >
-                <span>React | Mongo/Node | State Management | CRM</span>
-                <button>VIEW DETAILS</button>
-              </motion.div>
-            </motion.div>
 
-            {/* Картинка (без анимации) */}
-            <div className={styles["experience__container__previewdesk"]}>
-              <img src="/img/booking.png" alt=""/>
-            </div>
+
+              <div className={styles["experience__container2__info"]}>
+                  <div className={styles["experience__container2__previewdesk"]}>
+                      <img src="/img/igaming.png" alt=""/>
+                  </div>
+                  {/* Блок с проектом (по очереди) */}
+                  <motion.div
+                      className={styles["experience__container2__project"]}
+                      variants={containerVariants}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{amount: 0.3}}
+                  >
+                      <motion.p variants={itemVariants}>Igaming company</motion.p>
+                      <motion.h1 variants={itemVariants}>Frontend developer at Growe</motion.h1>
+                      <motion.div
+                          className={styles["experience__container2__project__description"]}
+                          variants={itemVariants}
+                      >
+                          I worked as part of a large development team together with a QA engineer, tech lead, and
+                          project manager.
+                          We collaborated in sprint-based workflows using Jira to support and build new
+                          applications.
+                          Our focus was on leveraging the latest technologies, primarily Next.js, to deliver modern,
+                          scalable solutions.
+                          <div className={styles["experience__container2__project__description--previewmob"]}>
+                              <img src="/img/igaming.png" alt=""/>
+                          </div>
+                      </motion.div>
+                      <motion.div
+                          className={styles["experience__container2__project--stack"]}
+                          variants={itemVariants}
+                      >
+                          <span> Next.js | JS/TS | Pixi.js/ | Test groups | Rest API</span>
+                          <button>VIEW DETAILS</button>
+                      </motion.div>
+                  </motion.div>
+
+                  {/* Картинка (без анимации) */}
+
+              </div>
           </div>
-        </div>
-        <div className={styles["experience__container2"]}>
 
-
-          <div className={styles["experience__container2__info"]}>
-            <div className={styles["experience__container2__previewdesk"]}>
-              <img src="/img/igaming.png" alt=""/>
-            </div>
-            {/* Блок с проектом (по очереди) */}
-            <motion.div
-                className={styles["experience__container2__project"]}
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{amount: 0.3}}
-            >
-              <motion.p variants={itemVariants}>Igaming company</motion.p>
-              <motion.h1 variants={itemVariants}>Frontend developer at Growe</motion.h1>
-              <motion.div
-                  className={styles["experience__container2__project__description"]}
-                  variants={itemVariants}
-              >
-                The app offers comprehensive data on companies, including categories
-                of Most Actives, Gainers and Losers Stock Market. Users can sort the
-                information by sector, name, highest or lowest price, dividend date,
-                and ex-dividend date. This data is updated in real-time, ensuring
-                that users always have access to the most current information.
-                <div className={styles["experience__container2__project__description--previewmob"]}>
-                  <img src="/img/igaming.png" alt=""/>
-                </div>
-              </motion.div>
-              <motion.div
-                  className={styles["experience__container2__project--stack"]}
-                  variants={itemVariants}
-              >
-                <span> Next.js | JS/TS | Pixi.js/ | Test groups | Rest API</span>
-                <button>VIEW DETAILS</button>
-              </motion.div>
-            </motion.div>
-
-            {/* Картинка (без анимации) */}
-
-          </div>
-        </div>
-        <div className={styles["experience__container"]}>
-
-
-          <div className={styles["experience__container__info"]}>
-            {/* Блок с проектом (по очереди) */}
-            <motion.div
-                className={styles["experience__container__project"]}
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{amount: 0.3}}
-            >
-              <motion.p variants={itemVariants}>Featured Project</motion.p>
-              <motion.h1 variants={itemVariants}>X-Dividend Mobile App</motion.h1>
-              <motion.div
-                  className={styles["experience__container__project__description"]}
-                  variants={itemVariants}
-              >
-                The app offers comprehensive data on companies, including categories
-                of Most Actives, Gainers and Losers Stock Market. Users can sort the
-                information by sector, name, highest or lowest price, dividend date,
-                and ex-dividend date. This data is updated in real-time, ensuring
-                that users always have access to the most current information.
-                <div className={styles["experience__container__project__description--previewmob"]}>
-                  <img src="/img/shopper.png" alt=""/>
-                </div>
-              </motion.div>
-              <motion.div
-                  className={styles["experience__container__project--stack"]}
-                  variants={itemVariants}
-              >
-                <span>React | Mongo/Node | State Management | CRM</span>
-                <button>VIEW DETAILS</button>
-              </motion.div>
-            </motion.div>
-
-            {/* Картинка (без анимации) */}
-            <div className={styles["experience__container__previewdesk"]}>
-              <img src="/img/shopper.png" alt=""/>
-            </div>
-          </div>
-        </div>
       </section>
   );
 };

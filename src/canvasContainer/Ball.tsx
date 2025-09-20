@@ -22,7 +22,7 @@ export const PlasmaBallCanvas: React.FC = () => {
     // -------------------------------
     const resizeCanvas = () => {
       const vw = window.innerWidth / 100;
-      const sizeVW = window.innerWidth < 1000 ? 70 : 30; // до 1000px = 60vw, иначе 30vw
+      const sizeVW = window.innerWidth < 1000 ? 50 : 30; // до 1000px = 60vw, иначе 30vw
       const sizePx = sizeVW * vw;
 
       // Масштабируем с учетом DPR

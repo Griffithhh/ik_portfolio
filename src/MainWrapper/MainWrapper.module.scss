@@ -1,11 +1,21 @@
 .wrapper{
   width: 100vw;
+  position: relative;
   overflow: hidden;
-  position: absolute;
     color:#a2fcfc;
   background-color: #000000;
   @media (min-width: 1000px) {
 
+  }
+  &--ball{
+    position: absolute;
+
+        top: 10.5%;
+    right: 50%;
+      @media (min-width: 1000px) {
+    top:10%;
+    right: 50%;
+  }
   }
 }
 .body{

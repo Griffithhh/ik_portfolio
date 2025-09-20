@@ -15,12 +15,14 @@
   }
 &__text{
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 6vw;
   display: inline-flex;
 
 gap: 5vw;
   text-transform: uppercase;
    font-family: var(--font-inter);
-
+       @media (min-width: 1000px) {
+           font-size: 3vw;
+       }
 }
 }

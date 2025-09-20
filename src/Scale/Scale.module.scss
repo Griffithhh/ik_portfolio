@@ -9,7 +9,7 @@
     flex-direction: column;
  @media (min-width: 1000px) {
    flex-direction: row;
-   padding-top: 10vw;
+   padding-top: 5vw;
    padding-bottom: 8vw;
    padding-right: 5vw;
    padding-left: 35vw;
@@ -83,8 +83,8 @@
       left: 18%;
      @media (min-width: 1000px) {
        left: unset;
-         width: 18vw;
-  height: 25vw;
+        width: 23vw;
+        height: 30vw;
      }
 }
 
