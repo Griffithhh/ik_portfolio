@@ -39,14 +39,17 @@ padding-top: 10vw;
     &--title{
           display: flex
 ;
+      text-transform: uppercase;
     margin-bottom: 30px;
       & > h1{
-            display: block;
-        font-size: 6.3vw;
-    unicode-bidi: isolate;
-         @media (min-width: 1000px) {
-                  font-size: 3.3vw;
-         }
+    font-size: 6.5vw;
+    font-weight: 700;
+    background: #a2fcfc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+          @media (min-width: 1000px) {
+                font-size: 2.5vw;
+          }
       }
     }
     &--line{
