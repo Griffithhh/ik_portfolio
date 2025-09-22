@@ -33,12 +33,12 @@ span {
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.3)
   );
-  background-size: 200% 100%;
+  background-size: 250% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   /* Анимация переливания */
-  animation: metallic-shine 10s linear infinite;
+  animation: metallic-shine 2s linear forwards;
 
   @media (min-width: 1000px) {
     font-size: 3vw;
@@ -51,6 +51,7 @@ span {
     background-position: 0% 0%;
   }
   100% {
-    background-position: 200% 0%;
+    background-position: 52% 0%;
+    /* Текст становится полностью видимым */
   }
 }
