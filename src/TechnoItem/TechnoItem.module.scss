@@ -5,7 +5,7 @@ z-index: 2;
 font-size: 15vw;
  height: 0;
  transform: translateY(10vw) rotate(10deg);
-
+color: #393e46;
     transition:
     height 1s ease,
     transform 1s ease,
@@ -15,18 +15,42 @@ font-size: 15vw;
  transform: translateY(0) rotate(0);
   }
 
-  span {
-    width: 100%;
-    border-bottom: #a2fcfc 0.15vw solid;;
-        font-family: var(--font-inter);
-    font-size: 7vw;
-    font-weight: 800;
-    display: block;
-    padding: 4px 8px;
-    text-transform: uppercase;
-   @media (min-width: 1000px) {
-       font-size: 3vw;
-   }
+span {
+  width: 100%;
+  font-family: var(--font-inter);
+  font-size: 7vw;
+  font-weight: 800;
+  display: block;
+  padding: 4px 8px;
+  text-transform: uppercase;
+
+  /* Металлический градиент */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3),
+    #f8f8f8,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Анимация переливания */
+  animation: metallic-shine 10s linear infinite;
+
+  @media (min-width: 1000px) {
+    font-size: 3vw;
   }
 }
+}
 
+@keyframes metallic-shine {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}

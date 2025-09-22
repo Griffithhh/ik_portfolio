@@ -136,6 +136,7 @@ export const Scale = () => {
               <TechnoItem key={i} tech={tech}/>
           ))}
         </div>
+
       </section>
   );
 };
