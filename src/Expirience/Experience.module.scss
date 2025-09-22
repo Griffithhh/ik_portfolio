@@ -3,6 +3,9 @@
   z-index: 10;
   position: relative;
        font-family: var(--font-inter);
+      @media (min-width: 1000px) {
+         padding-top: 0vw;
+      }
   &__title {
     text-transform: uppercase;
     font-size: 6.5vw;

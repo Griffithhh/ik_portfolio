@@ -1,5 +1,5 @@
 .scale {
-  z-index: 10;
+  z-index: 0;
     justify-content: space-between;
     width: 100%;
     padding: 16vw 5vw 17vw;
@@ -100,14 +100,12 @@
   justify-content: center;
   cursor: grab;
   user-select: none;
-
 background:
-    radial-gradient(circle at 25% 25%, rgba(162, 252, 252, 0.35) 0%, transparent 85%), /* яркая вспышка 1 */
-    radial-gradient(circle at 75% 75%, rgba(162, 252, 252, 0.35) 0%, transparent 85%), /* яркая вспышка 2 */
-    radial-gradient(circle at 50% 10%, rgba(162, 252, 252, 0.2) 0%, transparent 90%), /* дополнительная мелкая вспышка */
-    linear-gradient(135deg, #1a2a34, #0d1114), /* основной матовый фон */
+    radial-gradient(circle at 25% 25%, rgba(120, 120, 120, 0.35) 0%, transparent 85%), /* тёмная дымная вспышка 1 */
+    radial-gradient(circle at 75% 75%, rgba(120, 120, 120, 0.35) 0%, transparent 85%), /* тёмная дымная вспышка 2 */
+    radial-gradient(circle at 50% 10%, rgba(120, 120, 120, 0.2) 0%, transparent 90%), /* дополнительная мелкая дымная вспышка */
+    linear-gradient(135deg, #2b2b2b, #0f0f0f), /* основной матовый тёмно-серый фон */
     radial-gradient(circle, rgba(0,0,0,0.15), transparent 70%);
-
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.3),   /* лёгкая тень */
     0 8px 16px rgba(0, 0, 0, 0.2),  /* более крупная мягкая тень */
